@@ -13,4 +13,4 @@ RUN pacman -Syu --noconfirm --overwrite * `cat /tmp/tools` && \
 COPY conf/fish/config.fish /root/.config/fish/config.fish
 COPY conf/tmux.conf /root/.tmux.conf
 
-ENTRYPOINT ["fish"]
+ENTRYPOINT ["fish","--login"]
