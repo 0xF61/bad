@@ -4,7 +4,7 @@ LABEL maintainer="0xF61"
 COPY conf/pacman.conf /etc/pacman.conf
 COPY conf/tools /tmp/tools
 
-WORKDIR /root
+WORKDIR /bad
 
 RUN pacman -Syu --noconfirm --overwrite * `cat /tmp/tools` && \
 		pacman -Scc --noconfirm && \
