@@ -36,6 +36,7 @@ microsocks
 mimikatz
 mtr
 neofetch
+nodejs
 nikto
 nmap
 nuclei
@@ -53,6 +54,7 @@ python-pipx
 rlwrap
 rustbuster
 samba
+seclists
 smbmap
 sploitctl
 sqlmap

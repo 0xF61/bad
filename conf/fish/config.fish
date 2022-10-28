@@ -10,6 +10,3 @@ alias tmux="tmux -2u"
 alias dy="dig +noall +answer +additional $argv[1] @dns.toys"
 
 bind \en "commandline -a ' &| vim -'"
-
-fish_config theme choose 'ayu Mirage'
-fish_config prompt choose minimalist

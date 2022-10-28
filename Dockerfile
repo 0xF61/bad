@@ -4,13 +4,16 @@ LABEL maintainer="0xF61"
 COPY conf/pacman.conf /etc/pacman.conf
 COPY conf/tools /tmp/tools
 
-WORKDIR /bad
 
 RUN pacman -Syu --noconfirm --overwrite * `cat /tmp/tools` && \
 		pacman -Scc --noconfirm && \
+		vim -E +PlugInstall +qall && \
 		chsh -s /bin/fish
 
-COPY conf/fish/config.fish /root/.config/fish/config.fish
+ADD conf/fish /root/.config
+ADD conf/vim /root/.vim
 COPY conf/tmux.conf /root/.tmux.conf
+
+WORKDIR /bad
 
 ENTRYPOINT ["fish","--login"]
