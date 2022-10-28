@@ -36,9 +36,9 @@ microsocks
 mimikatz
 mtr
 neofetch
-nodejs
 nikto
 nmap
+nodejs
 nuclei
 nuclei-templates
 openconnect
@@ -67,5 +67,6 @@ wfuzz
 whatwaf
 whois
 wpscan
+yarn
 zaproxy
 zmap
