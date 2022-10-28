@@ -7,7 +7,6 @@ COPY conf/tools /tmp/tools
 
 RUN pacman -Syu --noconfirm --overwrite \* `cat /tmp/tools` && \
 		pacman -Scc --noconfirm && \
-		vim -E +PlugUpdate +qall && \
 		chsh -s /bin/fish
 
 ADD conf/fish /root/.config
