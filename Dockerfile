@@ -5,7 +5,7 @@ COPY conf/pacman.conf /etc/pacman.conf
 COPY conf/tools /tmp/tools
 
 
-RUN pacman -Syu --noconfirm --overwrite * `cat /tmp/tools` && \
+RUN pacman -Syu --noconfirm --overwrite \* `cat /tmp/tools` && \
 		pacman -Scc --noconfirm && \
 		vim -E +PlugInstall +qall && \
 		chsh -s /bin/fish
