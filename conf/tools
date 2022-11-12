@@ -5,7 +5,6 @@ bind
 binwalk
 chisel
 chromium
-dhclient
 enum4linux-ng
 feroxbuster
 ffuf
@@ -19,15 +18,12 @@ git-dumper
 gnu-netcat
 gobuster
 gowitness
-gtfo
 gvim
-hashcat
-hashcat-utils
 httpx
 hydra
 ipcalc
-iperf3
 iputils
+katana
 man-pages
 masscan
 meg
@@ -40,12 +36,12 @@ nikto
 nmap
 nodejs
 nuclei
-nuclei-templates
 openconnect
 openssh
 openvpn
 p7zip
 parallel
+payloadsallthethings
 perl-image-exiftool
 proxychains-ng
 pwgen
@@ -54,7 +50,6 @@ python-pipx
 rlwrap
 rustbuster
 samba
-seclists
 smbmap
 sploitctl
 sqlmap
