@@ -55,6 +55,7 @@ sploitctl
 sqlmap
 sshuttle
 sudo
+testssl.sh
 tmux
 upx
 waybackurls
