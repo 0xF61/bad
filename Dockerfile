@@ -9,7 +9,7 @@ ADD conf/vim /root/.vim
 COPY conf/tmux.conf /root/.tmux.conf
 
 
-RUN pacman -Syu --noconfirm --overwrite \* `cat /tmp/tools` && \
+RUN pacman -Syyu --noconfirm --overwrite \* `cat /tmp/tools` && \
 		pacman -Scc --noconfirm && \
 		chsh -s /bin/fish
 

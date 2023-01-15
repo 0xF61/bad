@@ -36,8 +36,8 @@ set smartindent smarttab autoindent smartcase ignorecase
 " easier to see characters when `set paste` is on
 set nolist listchars=tab:→\ ,eol:↲,nbsp:␣,space:␣,trail:·,extends:⟩,precedes:⟨
 
-" enough for line numbers
-set textwidth=77
+" don't restrict my line length
+set textwidth=0
 
 " more risky, but cleaner
 set nobackup noswapfile nowritebackup nomodeline
