@@ -1,16 +1,16 @@
 FROM blackarchlinux/blackarch:latest
+
 LABEL maintainer="0xF61"
 
 COPY conf/pacman.conf /etc/pacman.conf
 COPY conf/tools /tmp/tools
 
-ADD conf/fish /root/.config/fish/
-ADD conf/vim /root/.vim
-COPY conf/tmux.conf /root/.tmux.conf
-
-
 RUN pacman -Syyu --noconfirm --overwrite \* `cat /tmp/tools` && \
 		pacman -Scc --noconfirm && \
+		git clone https://github.com/0xF61/dotfiles.git && \
+		rm -rf ~/.config/ && mv dotfiles/.config/ ~/ && \
+		rm -rf ~/.vim/ && mv dotfiles/.vim ~ && \
+		rm -rf dotfiles && \
 		chsh -s /bin/fish
 
 WORKDIR /bad
