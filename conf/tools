@@ -5,6 +5,7 @@ bind
 binwalk
 chisel
 chromium
+dnsx
 enum4linux-ng
 feroxbuster
 ffuf
@@ -24,6 +25,7 @@ hydra
 ipcalc
 iputils
 katana-pd
+lsd
 man-pages
 masscan
 meg
@@ -31,6 +33,7 @@ metasploit
 microsocks
 mimikatz
 mtr
+naabu
 neofetch
 nikto
 nmap
@@ -50,19 +53,19 @@ python-pipx
 rlwrap
 rustbuster
 samba
+seclists
 smbmap
 sploitctl
 sqlmap
 sshuttle
+subfinder
 sudo
 testssl.sh
 tmux
 upx
 waybackurls
-wfuzz
 whatwaf
 whois
 wpscan
 yarn
-zaproxy
 zmap
