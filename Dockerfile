@@ -12,6 +12,7 @@ RUN pacman -Syyu --noconfirm --overwrite \* `cat /tmp/tools` && \
 		rm -rf ~/.vim/ && mv dotfiles/.vim ~ && \
 		rm -rf dotfiles && \
 		vim +PlugInstall +qall >/dev/null && \
+		curl -s https://raw.githubusercontent.com/six2dez/OneListForAll/main/onelistforallmicro.txt -Lo /opt/onelistforallmicro.txt && \
 		chsh -s /bin/fish
 
 WORKDIR /bad
