@@ -18,7 +18,6 @@ git-dumper
 gnu-netcat
 gobuster
 gowitness
-gvim
 httpx
 hydra
 ipcalc
@@ -34,6 +33,7 @@ mimikatz
 mtr
 naabu
 neofetch
+neovim
 nikto
 nmap
 nodejs
