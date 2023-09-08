@@ -14,9 +14,12 @@ RUN pacman -Syyu --noconfirm --overwrite \* `cat /tmp/tools` && \
 		rm -rf ~/.vim/ && mv dotfiles/.vim ~/ && \
 		rm -rf dotfiles && \
 		curl -s https://raw.githubusercontent.com/six2dez/OneListForAll/main/onelistforallmicro.txt -Lo /opt/onelistforallmicro.txt && \
-		chsh -s /bin/fish && \
-		nvim +PlugInstall +qall 2>/dev/null && \
-		nvim -c 'CocInstall -sync coc-go coc-highlight coc-json coc-marketplace coc-pairs coc-prettier coc-pyright coc-snippets |q'
+		chsh -s /bin/fish
+
+SHELL ["/usr/sbin/fish", "-c"]
+
+RUN		nvim +PlugInstall +qall 2>/dev/null && \
+			nvim -c 'CocInstall -sync coc-go coc-highlight coc-json coc-marketplace coc-pairs coc-prettier coc-pyright coc-snippets' -c 'GoInstallBinaries' -c 'q'
 
 WORKDIR /bad
 

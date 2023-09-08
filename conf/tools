@@ -38,6 +38,7 @@ neovim
 nikto
 nmap
 nodejs
+npm
 nuclei
 openconnect
 openssh
@@ -49,6 +50,7 @@ perl-image-exiftool
 proxychains-ng
 pwgen
 python
+python-neovim
 python-pipx
 rlwrap
 rustbuster
