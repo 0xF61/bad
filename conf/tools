@@ -52,6 +52,7 @@ pwgen
 python
 python-neovim
 python-pipx
+ripgrep
 rlwrap
 rustbuster
 samba
