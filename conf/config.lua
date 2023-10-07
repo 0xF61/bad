@@ -11,6 +11,14 @@ lvim.plugins = {
     { 'tpope/vim-dadbod',                     lazy = true },
     { 'kristijanhusak/vim-dadbod-completion', ft = { 'sql', 'mysql', 'plsql' }, lazy = true },
   },
+  cmd = {
+    'DBUI',
+    'DBUIToggle',
+    'DBUIAddConnection',
+    'DBUIFindBuffer',
+  },
+  -- vim-go
+  'fatih/vim-go',
   -- LSP Signature in function
   {
     "ray-x/lsp_signature.nvim",
