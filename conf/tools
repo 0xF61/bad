@@ -7,6 +7,7 @@ chisel
 chromium
 dnsx
 enum4linux-ng
+fd
 feroxbuster
 ffuf
 fierce
@@ -52,6 +53,7 @@ pwgen
 python
 python-neovim
 python-pipx
+python-pynvim
 ripgrep
 rlwrap
 rustbuster

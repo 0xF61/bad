@@ -6,6 +6,7 @@ COPY conf/pacman.conf /etc/pacman.conf
 COPY conf/tools /tmp/tools
 
 ENV TERM "xterm-256color"
+ENV GOPATH "/root/.local/share/go/"
 
 RUN pacman -Syyu --noconfirm --overwrite \* `cat /tmp/tools` && \
   git clone --depth=1 https://github.com/0xF61/dotfiles.git && \
