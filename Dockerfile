@@ -9,7 +9,8 @@ ENV TERM "xterm-256color"
 
 ENV GOPATH "/root/.local/share/go/"
 
-RUN pacman -Syyu --noconfirm --overwrite \* `cat /tmp/tools` && \
+RUN pacman-key --init && pacman-key  --populate && \
+  pacman -Syyu --noconfirm --overwrite \* `cat /tmp/tools` && \
   git clone --depth=1 https://github.com/0xF61/dotfiles.git && \
   rm -rf ~/.config && mv dotfiles/.config/ ~/ && \
   yes | pacman -Scc && \
