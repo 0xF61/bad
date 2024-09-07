@@ -6,7 +6,6 @@ binwalk
 chisel
 chromium
 dnsx
-enum4linux-ng
 fd-find
 feroxbuster
 ffuf
@@ -54,10 +53,8 @@ sqlmap
 sshuttle
 subfinder
 sudo
-testssl.sh
 tmux
 upx
 whois
 wpscan
 yarn
-zmap
