@@ -13,10 +13,10 @@ ENV GOPATH "/root/.local/share/go/"
 RUN apt -y update && apt -y upgrade && \
   DEBIAN_FRONTEND=noninteractive apt -yq install kali-linux-headless fish neovim < /tmp/tools && \
   git clone --depth=1 https://github.com/0xF61/dotfiles.git && \
-  rm -rf ~/.config && mv dotfiles/.config/ ~/ && \
-  chsh -s /bin/fish
-
-RUN nvim --headless "+Lazy! sync" +qa
+  rm -rf ~/.config && mv dotfiles/.config/ ~/ 
+  
+# Remove auto installation for lazyvim
+# RUN nvim --headless "+Lazy! sync" +qa
 
 WORKDIR /bad
 SHELL ["/usr/sbin/fish", "-c"]
